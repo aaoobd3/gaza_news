@@ -36,7 +36,7 @@ from_date = to_date - timedelta(days=days_before)
 to_date_str = to_date.strftime('%Y-%m-%d')
 from_date_str = from_date.strftime('%Y-%m-%d')
 print(to_date_str,from_date_str)
-top  = gn.search("الوضع الصحي في غزه",when='after:' + from_date_str + ' before:' +to_date_str)
+top  = gn.search("gaza+healthcare|gaza+hospitals")
 news_list = [i["link"] for i in top["entries"]]
 
   
