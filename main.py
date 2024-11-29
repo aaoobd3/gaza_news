@@ -44,7 +44,20 @@ def render_full_news(news):
 
 # Main Streamlit App
 def main():
-    st.title("News Viewer")
+    st.html("""
+  <style>
+    [alt=Logo] {
+      height: 100px !important;
+    }
+  </style>
+        """)
+    st.logo(
+        "images\logo.png",
+        icon_image="images\logo.png",size='large',
+    )
+    
+    st.divider()
+    
     file_path = "news.json"  # Path to your JSON file
     news_list = load_news_data(file_path)
     
