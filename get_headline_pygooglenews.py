@@ -27,7 +27,7 @@ def decode(source_url):
 
 gn = GoogleNews(lang='ar',country='ME')
 
-days_before = 100
+days_before = 200
 
 # Generate 'to' and 'from' dates
 to_date = datetime.now()
