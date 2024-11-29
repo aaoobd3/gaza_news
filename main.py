@@ -44,16 +44,9 @@ def render_full_news(news):
 
 # Main Streamlit App
 def main():
-    st.html("""
-  <style>
-    [alt=Logo] {
-      height: 100px !important;
-    }
-  </style>
-        """)
-    st.logo(
-        "images\logo.png",
-        icon_image="images\logo.png",size='large',
+    
+    st.image(
+        "https://raw.githubusercontent.com/aaoobd3/gaza_news/refs/heads/main/images/logo.png",width=100
     )
     
     st.divider()
